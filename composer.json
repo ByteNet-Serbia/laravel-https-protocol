@@ -1,0 +1,47 @@
+{
+    "name": "bytenet/laravel-https-protocol",
+    "type": "library",
+    "description": "ByteNET Laravel HTTPS protocol package, which offers https manipulation",
+    "keywords": [
+        "bytenet",
+		"laravel",
+		"https",
+        "protocol"
+    ],
+    "homepage": "https://github.com/ByteNet-Serbia/laravel-https-protocol",
+    "license": "BTNT-License v1.0",
+    "authors": [
+        {
+            "name": "Nikola Zeravcic",
+            "email": "office@bytenet.rs",
+            "homepage": "http://www.bytenet.rs",
+            "role": "CEO, Chief Architect & Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.3",
+        "php" : "~5.6|~7.0",
+        "laravel/framework": "5.3.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ByteNet\\LaravelHttpsProtocol\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ByteNet\\LaravelHttpsProtocol\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
