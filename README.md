@@ -9,7 +9,7 @@ Laravel HttpsProtocol central package, which includes:
 -  // TODO
 
 
-## Install on Laravel 5.3
+## Install on Laravel 5.4
 
 1) Run in your terminal:
 
@@ -19,4 +19,5 @@ $ composer require bytenet/laravel-admin-base
 
 2) Add the service providers in config/app.php:
 ``` php
-ByteNet\LaravelHttpsProtocol\HttpsProtocolServiceProvider::class,```
+ByteNet\LaravelHttpsProtocol\HttpsProtocolServiceProvider::class,
+```
