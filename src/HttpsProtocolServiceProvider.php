@@ -32,8 +32,16 @@ class HttpsProtocolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // use the vendor configuration file as fallback
+        $this->mergeConfigFrom(__DIR__ . '/config/bytenet/httpsProtocol.php', 'bytenet.httpsProtocol');
+
         $this->map();
+
+        // -------------
+        // PUBLISH FILES
+        // -------------
+        // publish config file
+        $this->publishes([__DIR__.'/config' => config_path()], 'config');
     }
 
     /**

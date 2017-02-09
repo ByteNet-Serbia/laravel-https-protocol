@@ -15,7 +15,7 @@ class ByteNetHttpsProtocol
      */
     public function handle($request, Closure $next)
     {
-        if (! $request->secure() && env('APP_ENV') === 'production') {
+        if (! $request->secure() && (env('APP_ENV') === 'production' || config('bytenet.httpsProtocol.force_ssl'))) {
             return redirect()->secure($request->getRequestUri());
         }
 

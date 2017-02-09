@@ -20,5 +20,3 @@ $ composer require bytenet/laravel-admin-base
 2) Add the service providers in config/app.php:
 ``` php
 ByteNet\LaravelHttpsProtocol\HttpsProtocolServiceProvider::class,```
-
-
